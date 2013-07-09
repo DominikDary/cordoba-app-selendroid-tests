@@ -18,9 +18,9 @@ public class DemoTest {
     WebDriver driver = startSelendroidServer();
     driver.switchTo().window("WEBVIEW");
 
-    WebElement inputField = driver.findElement(By.className("test-text-input"));
+    WebElement inputField = driver.findElement(By.cssSelector("input[class='test-text-input']"));
     inputField.sendKeys("Hello Selendroid");
-    WebElement button = driver.findElement(By.className("test-button"));
+    WebElement button = driver.findElement(By.cssSelector("button[class='test-button']"));
     button.click();
   }
 
